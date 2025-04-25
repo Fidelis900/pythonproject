@@ -111,8 +111,6 @@ def clean_name(name):
 def normalize_input(text):
     return text.lower().replace("colour", "color").replace("what is", "what's").replace("favourite", "favorite").strip()
 
-import random
-
 # Then update your analyze_mood function like this:
 def analyze_mood(mood):
     mood = normalize_input(mood)
